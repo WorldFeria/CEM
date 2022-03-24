@@ -1,0 +1,627 @@
+$primary: #00386F   ;
+$dark: #EF5511;
+$light: rgb(250, 141, 58);
+$selection-dark: #7ec7ff3c;
+$selection: #dcf0ff;
+
+$secondary-dark: #1E1E1E;
+$primary-dark: #171717;
+
+$light-dark:#454545;
+$filler-dark: #171717;
+
+$gray: #d5d5d5;
+$white: #fff;
+$light-body: #F4F5F7;
+
+$frozen: #358FFD;
+$cold: #35F0FD;
+$warm: #FDA435;
+$hot: #E74A4A;
+$student: #31C357;
+$standBy: #878787;
+$cancelled: #000;
+
+body {
+    background: $light-body;
+
+    &.dark {
+        background: $secondary-dark;
+    }
+}
+
+.details-avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px -10px $gray;
+
+    body.dark & {
+        background: $primary-dark;
+        box-shadow: 0px 0px 50px -20px #c9c9c9;
+    }
+}
+
+.card {
+    transition: .5s;
+    background: $white;
+    border: 0px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    padding: 18px;
+
+    box-shadow: 0px 0px 50px -24px #000000;
+
+    body.dark & {
+        background: $primary-dark;
+        box-shadow: 0px 0px 50px -30px $light-dark;
+    }
+}
+
+.img_logo {
+    height: 60px;
+}
+
+#heading {
+    text-transform: uppercase;
+    color: $primary;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid $selection;
+    outline-width: 0
+}
+
+.action-button {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .3s;
+}
+
+.action-button-previous {
+    transition: .3s;
+}
+
+#msform .action-button {
+    width: 100px;
+    border-radius: 25px;
+    background: $dark;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: $selection;
+    border-radius: 5px;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: $light;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: $selection;
+    border-radius: 5px;
+}
+
+.card-lead {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: $primary;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: $primary;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+    padding-left: 0px;
+}
+
+#progressbar .active-form {
+    color: $light
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 33%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f406"
+}
+
+#progressbar #extrainfo:before {
+    font-family: FontAwesome;
+    content: "\f05a"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar #program:before {
+    font-family: FontAwesome;
+    content: "\f51c"
+}
+
+#progressbar #schedule:before {
+    font-family: FontAwesome;
+    content: "\f073"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active-form:before,
+#progressbar li.active-form:after {
+    background: $primary
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: $light
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+th {
+    transition: .5s;
+
+    body.dark & {
+        color: $white;
+    }
+
+}
+
+.t-header {
+    transition: .5s;
+    background: $light;
+    color: $white;
+
+    body.dark & {
+        background: $primary;
+
+    }
+}
+
+td {
+    transition: .5s;
+
+    body.dark & {
+        color: $white;
+    }
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    transition: 0.5s;
+
+    body.dark & {
+        background-color: #272727;
+    }
+}
+
+.table-striped>tbody>tr:nth-of-type(odd):hover {
+    transition: 0.5s;
+    background-color: $selection;
+
+    body.dark & {
+        background-color: $selection-dark;
+    }
+}
+
+.table-striped>tbody>tr:nth-of-type(even):hover {
+    transition: 0.5s;
+    background-color: $selection;
+
+    body.dark & {
+        background-color: $selection-dark;
+    }
+}
+
+
+/*td:hover{
+    transition: .5s;
+    background: $selection;
+}*/
+
+.badge_status {
+
+    background: $gray;
+    border-radius: 5px;
+    padding: 6px;
+
+    &.FROZEN {
+        background: $frozen;
+        color: white;
+    }
+
+    &.COLD {
+        background: $cold;
+        color: white;
+    }
+
+    &.WARM {
+        background: $warm;
+        color: white;
+    }
+
+    &.HOT {
+        background: $hot;
+        color: white;
+    }
+
+    &.STUDENT {
+        background: $student;
+        color: white;
+    }
+
+    &.STANDBY {
+        background: $standBy;
+        color: white;
+    }
+
+    &.CANCELLED {
+        background: $cancelled;
+        color: white;
+    }
+
+
+    &.DANGER {
+        background: $hot;
+        color: white;
+    }
+
+    &.WARNING {
+        background: #FFC107;
+        color: white;
+    }
+
+    &.SUCCESS {
+        background: $student;
+        color: white;
+    }
+
+    &.PURPLE {
+        background: #9857ff;
+        color: white;
+    }
+
+
+}
+
+#ld_card_status {
+
+    &.FROZEN {
+        color: $frozen;
+    }
+
+    &.COLD {
+        color: $cold;
+    }
+
+    &.WARM {
+        color: $warm;
+    }
+
+    &.HOT {
+        color: $hot;
+    }
+
+    &.STUDENT {
+        color: $student;
+    }
+
+    &.STANDBY {
+        color: $standBy;
+    }
+
+    &.CANCELLED {
+        color: $cancelled;
+    }
+
+}
+
+
+.accordion-collapse {
+    width: 100%;
+
+
+    body.dark & {
+        background-color: $primary-dark;
+    }
+
+}
+
+.accordion-button {
+    width: 100%;
+
+    body.dark & {
+        background-color: $secondary-dark;
+        color: $white;
+    }
+
+}
+
+.accordion-item {
+
+    body.dark & {
+        border-color: $gray;
+    }
+
+}
+
+input {
+
+    body.dark & {
+        background: $secondary-dark;
+        color: $gray;
+    }
+}
+
+input:focus {
+
+    body.dark & {
+        background: $secondary-dark;
+        color: $gray;
+    }
+}
+
+
+.form-control {
+
+    body.dark & {
+        background: $secondary-dark;
+        color: $gray;
+    }
+
+}
+
+
+.form-control:focus {
+
+    body.dark & {
+        background: $secondary-dark;
+        color: $gray;
+    }
+}
+
+
+.card-superior {
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.l-bg-cherry {
+    background: linear-gradient(to right, #493240, #f09) !important;
+    color: #fff;
+}
+
+.l-bg-blue-dark {
+    background: linear-gradient(to right, #373b44, #4286f4) !important;
+    color: #fff;
+}
+
+.l-bg-green-dark {
+    background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+    color: #fff;
+}
+
+.l-bg-orange-dark {
+    background: linear-gradient(to right, #a86008, #ffba56) !important;
+    color: #fff;
+}
+
+.card-superior .card-statistic-3 .card-icon-large .fas,
+.card-superior .card-statistic-3 .card-icon-large .far,
+.card-superior .card-statistic-3 .card-icon-large .fab,
+.card-superior .card-statistic-3 .card-icon-large .fal {
+    font-size: 80px;
+    margin-right: 25px;
+}
+
+.card-superior .card-statistic-3 .card-icon {
+    text-align: center;
+    line-height: 50px;
+    margin-left: 15px;
+    color: #000;
+    position: absolute;
+    right: -5px;
+    top: 20px;
+    opacity: 0.1;
+}
+
+.card-statistic-3{
+    padding: 14px;
+}
+
+.l-bg-FROZEN {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #012b61, $frozen) !important;
+    color: #fff;
+}
+
+.l-bg-COLD {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #015361 0%, $cold 100%) !important;
+    color: #fff;
+}
+
+.l-bg-HOT {
+    border-radius: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #610101, $hot) !important;
+    color: #fff;
+}
+
+.l-bg-WARM {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #613301, $warm) !important;
+    color: #fff;
+}
+
+.l-bg-STUDENT {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #014710, $student) !important;
+    color: #fff;
+}
+
+.l-bg-STANDBY {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #dcdbdb, $standBy) !important;
+    color: #fff;
+}
+
+.l-bg-CANCELLED {
+    border-radius: 10px;
+    background: linear-gradient(135deg, $standBy, $cancelled) !important;
+    color: #fff;
+}
+
+
+.card-title{
+    color: white;
+}
+
+.nav{
+    .active::before {
+        content: '';
+        width: 0px;
+    }
+}
+
+
+.tab-content>.active {
+    display: block;
+    width: 100%;
+    
+}
+
+label{
+    color: $light-dark;
+    body.dark &{
+        color: $light-body;
+    }    
+}

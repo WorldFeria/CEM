@@ -1,0 +1,175 @@
+/*Developer: Alan Gtz - G3TZO Tech*/
+body {
+  font-family: "Karla", sans-serif;
+  background: #d0d0ce;
+  background: linear-gradient(to right, #d0d0ce, #dd0e0e);
+  min-height: 100vh; 
+}
+
+.brand-wrapper {
+  margin-bottom: 19px; }
+  .brand-wrapper .logo {
+    display:block;/*Centrado de contenido*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    height: 80px; 
+  }
+
+  .login-card {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+  }
+  .login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; 
+      }
+  .login-card .card-body {
+    padding: 15px 5px 5px; 
+  }
+    @media (max-width: 422px) {
+      .login-card .card-body {
+        padding: 15px 20px; 
+      } 
+    }
+  .login-card-description {
+    font-size: 25px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+  }
+  .login-card-description-2 {
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 30px; 
+  }
+  .login-card form {
+    max-width: 326px; 
+  }
+  .abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-card .form-control {
+    border: 1px solid #d5dae2;
+    padding: 10px 15px;
+    width: 325px;
+    min-height: 45px;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 10px; 
+  }
+    .login-card .form-control::-webkit-input-placeholder {
+      color: #919aa3; 
+    }
+    .login-card .form-control::-moz-placeholder {
+      color: #919aa3; 
+    }
+    .login-card .form-control:-ms-input-placeholder {
+      color: #919aa3; 
+    }
+    .login-card .form-control::-ms-input-placeholder {
+      color: #919aa3; 
+    }
+    .login-card .form-control::placeholder {
+      color: #919aa3; 
+    }
+
+  .field-icon {
+    float: right;
+    margin-right: 15px;
+    margin-top: -39px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .login-card .login-btn {
+    padding: 13px 20px 12px;
+    background-color: #000;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #ed3947;
+    margin-bottom: 24px; 
+  }
+    .login-card .login-btn:hover {
+      border: 1px solid #000;
+      background-color: transparent;
+      color: #ed3947; 
+    }
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+    @media (max-width: 767px) {
+      .login-card-footer-text {
+        margin-bottom: 20px; 
+      } 
+    }
+  .login-card-footer-face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1877f2;
+  }
+  .login-card-footer-insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #df3966;
+  }
+  .login-card-footer-whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00bfa5;
+  }
+  .login-card-footer-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+  }
+
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+    border-radius: 1rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
